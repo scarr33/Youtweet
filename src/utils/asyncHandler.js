@@ -1,4 +1,4 @@
-const asyncHandler = (reruestHandler) => {
+const asyncHandler = (requestHandler) => {
   (req, res, next) => {
     Promise.resolve(reruestHandler(req, res, next)).catch((err) => next(err));
   };
