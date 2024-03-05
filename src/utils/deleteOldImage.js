@@ -1,4 +1,4 @@
-import { ApiError } from "./ApiError";
+import { ApiError } from "./ApiError.js";
 import fs from "fs";
 
 export const deleteOldImage = async (localFilePath) => {
